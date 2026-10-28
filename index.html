@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Film Listem</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main>
+    <h1>Film Listem</h1>
+    <p>İzlemek istediğin filmleri takip et.</p>
+
+    <form id="film-formu">
+      <label for="film-adi">Film adı</label>
+      <input id="film-adi" placeholder="Örneğin: The Matrix" required>
+
+      <label for="film-turu">Film türü</label>
+      <input id="film-turu" placeholder="Örneğin: Bilim Kurgu" required>
+
+      <button type="submit">Film Ekle</button>
+    </form>
+
+    <p id="mesaj" role="status"></p>
+
+    <label for="film-arama">Film ara</label>
+    <input id="film-arama" type="search" placeholder="Film adı yaz...">
+
+    <p id="ozet"></p>
+    <ul id="film-listesi"></ul>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>
